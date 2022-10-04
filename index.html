@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>resume builder</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">Build Resume</li>
+                    <li class="nav-item">Samples</li>
+                    <li class="nav-item">Info</li>
+                    <li class="nav-item">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--##################### Phase 1 user data ###################-->
+            <div class="container1">
+                <div class="link-line">
+                    <div class="line"></div>
+                    <div class="circles">
+                        <button class="circles-btn circles-btn1">1</button
+                        ><button class="circles-btn circles-btn2">2</button>
+                        <button class="circles-btn circles-btn3">3</button
+                        ><button class="circles-btn circles-btn4">4</button>
+                        <button class="circles-btn circles-btn5">5</button
+                        ><button class="circles-btn circles-btn6">6</button>
+                        <button class="circles-btn circles-btn7">7</button>
+                        <button class="circles-btn circles-btn8">8</button>
+                    </div>
+                </div>
+                <div class="data-div">
+                    <!-- Name Slide-->
+                    <div class="data data1">
+                        <button class="slide1-save-data save-btn">save</button>
+                        <div class="form-div form-div1">
+                            <label class="slide1-lable" for="name"
+                                >Enter Your Name</label
+                            >
+                            <input
+                                type="text"
+                                class="input1 input-name"
+                                autofocus
+                                id="name"
+                            />
+                            <label class="slide1-lable" for="professioon">
+                                Your Profession</label
+                            >
+                            <input
+                                type="text"
+                                class="input1 input-profession"
+                                placeholder="IT Specialist"
+                                id="profession"
+                            />
+                            <label
+                                class="slide1-lable"
+                                for="myfile"
+                                class="file"
+                                >Upload Image</label
+                            >
+                            <input
+                                type="file"
+                                name="myfile"
+                                onchange="imageUploaded()"
+                            />
+                        </div>
+                    </div>
+                    <!-- Summary Slide-->
+                    <div class="data data2">
+                        <button class="slide2-save-data save-btn">save</button>
+                        <div class="form-div form-div2">
+                            <label for="summary" class="slide2-lable"
+                                >Summary/About Me</label
+                            >
+                            <textarea
+                                name="summary"
+                                class="slide2-input"
+                                id="summary"
+                                class="input2"
+                                cols="30"
+                                rows="10"
+                                placeholder="Describe yourself in 5 to 10 sentences."
+                            ></textarea>
+                        </div>
+                    </div>
+                    <!-- Experience slide -->
+                    <div class="data data3">
+                        <button class="slide3-save-data save-btn">save</button>
+                        <button class="slide3-skip-data skip-btn">skip</button>
+                        <div class="form-div form-div3">
+                            <h2 class="slide-heading">Experience</h2>
+                            <p class="slide-para slide3-para">
+                                Add your Experience upto 5
+                            </p>
+                            <button class="add-btn add-company">+</button>
+                            <ul class="company-list">
+                                <li class="company-numbering">
+                                    <div class="company">
+                                        <button class="del-company">x</button>
+                                        <input
+                                            type="text"
+                                            class="input3 company-title"
+                                            placeholder="Job Title"
+                                        />
+                                        <input
+                                            type="text"
+                                            class="input3 company-name"
+                                            placeholder="Company Name"
+                                        />
+                                        <!-- <textarea
+                                            name="company-info"
+                                            class="company-info input3"
+                                            placeholder="Enter short info about company & what you do in here."
+                                            cols="30"
+                                            rows="5"
+                                        ></textarea> -->
+                                        <div class="date-div">
+                                            <label
+                                                for="date1"
+                                                class="date-lable"
+                                                >Starting Date</label
+                                            >
+                                            <input
+                                                type="date"
+                                                id="date1"
+                                                class="date start-date"
+                                            />
+                                        </div>
+                                        <div class="date-div">
+                                            <label
+                                                for="date2"
+                                                class="date-lable"
+                                                >Ending Date</label
+                                            >
+                                            <input
+                                                type="date"
+                                                id="date2"
+                                                class="date end-date"
+                                            />
+                                        </div>
+                                        <div class="working-div">
+                                            <label
+                                                for="working"
+                                                class="working-lable"
+                                            >
+                                                <input
+                                                    type="checkbox"
+                                                    class="check-box"
+                                                    id="working"
+                                                />
+                                                Currently working
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Skills Slide-->
+                    <div class="data data4">
+                        <button class="slide4-save-data save-btn">save</button>
+                        <button class="slide4-skip-data skip-btn">skip</button>
+                        <div class="form-div form-div4">
+                            <h2 class="slide-heading slide4-heading">Skills</h2>
+                            <p class="slide-para slide4-para">
+                                Add skills upto 12.
+                            </p>
+                            <div class="skills-input-div">
+                                <input
+                                    type="text"
+                                    autofocus
+                                    class="skills-input"
+                                    placeholder="Add skills"
+                                />
+                                <button class="skills-btn">Add</button>
+                            </div>
+                            <ol class="skills-list"></ol>
+                        </div>
+                    </div>
+                    <!-- Education Slide-->
+                    <div class="data data5">
+                        <button class="slide5-save-data save-btn">save</button>
+                        <button class="slide5-skip-data skip-btn">skip</button>
+                        <div class="form-div form-div5">
+                            <h2 class="slide-heading slide5-heading">
+                                Education
+                            </h2>
+                            <p class="slide-para slide5-para">
+                                Add your education
+                            </p>
+
+                            <button class="add-btn add-education">+</button>
+                            <ul class="education-list">
+                                <li class="education-item">
+                                    <input
+                                        type="text"
+                                        class="input-education input1"
+                                        placeholder="Matriculation from oxford school in 2018"
+                                    />
+                                    <button class="del-education">x</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Project Slide-->
+                    <div class="data data6">
+                        <button class="slide6-save-data save-btn">save</button>
+                        <button class="slide6-skip-data skip-btn">skip</button>
+                        <div class="form-div form-div6">
+                            <h2 class="slide-heading slide6-heading">
+                                Projects
+                            </h2>
+                            <p class="slide-para slide6-para">
+                                Add your project links upto 4
+                            </p>
+
+                            <button class="add-btn add-project">+</button>
+                            <ul class="project-list">
+                                <li class="project-item">
+                                    <input
+                                        type="text"
+                                        class="input-project input1"
+                                        placeholder="Place your project link/name in here"
+                                    />
+                                    <button class="del-project">x</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Certification Slide-->
+                    <div class="data data7">
+                        <button class="slide7-save-data save-btn">save</button>
+                        <button class="slide7-skip-data skip-btn">skip</button>
+                        <div class="form-div form-div7">
+                            <h2 class="slide-heading slide7-heading">
+                                Certification
+                            </h2>
+                            <p class="slide-para slide7-para">
+                                Add your certificate links upto 5
+                            </p>
+
+                            <button class="add-btn add-certification">+</button>
+                            <ul class="certification-list">
+                                <li class="certification-item">
+                                    <input
+                                        type="text"
+                                        class="input-certification input1"
+                                        placeholder="Place your certification links"
+                                    />
+                                    <button class="del-certification">x</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contact Slide-->
+                    <div class="data data8">
+                        <div class="form-div form-div8">
+                            <button class="slide8-save-data save-btn save-data">
+                                save
+                            </button>
+                            <h2 class="slide-heading slide8-heading">
+                                Contacts
+                            </h2>
+                            <!-- <p class="slide-para slide8-para">Add your certificate links upto 5</p> -->
+
+                            <!-- <button class="add-btn add-certification">+</button> -->
+                            <ul class="contact-list">
+                                <li class="contact-item">
+                                    <input
+                                        type="email"
+                                        class="input-contacts input1"
+                                        placeholder="You Email"
+                                    />
+                                    <input
+                                        type="Number"
+                                        class="input-contacts input1"
+                                        placeholder="You Phone Number"
+                                    />
+                                    <input
+                                        type="address"
+                                        class="input-contacts input1"
+                                        placeholder="You address"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="input-contacts contact-link input1"
+                                        placeholder=" Twitter/Facebook link"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="input-contacts contact-link input1"
+                                        placeholder=" Github/Facebook link"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="directionsBtn">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>

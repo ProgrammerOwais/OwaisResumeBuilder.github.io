@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="resume.css" />
+        <title>Resume1</title>
+    </head>
+    <body>
+        <!--##################### Phase 2 Designs ###################-->
+        <div class="design-templates">
+            <div class="designs">
+                <div class="design desing1">
+                    <button class="design-btn design1-btn">Design 1</button>
+                </div>
+                <div class="design desing2">
+                    <button class="design-btn design2-btn">Design2</button>
+                </div>
+            </div>
+        </div>
+        <!-- ##########$$$$$$$$$$$$$$$$ Download $$$$$$$$$$$############-->
+
+        <button class="r1download-btn">Download pdf</button>
+        <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ RESUME1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+        <div class="resume1">
+            <div class="editor-div1">
+                <button class="accordion">Colors</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">color1</span>
+                        <input
+                            type="text"
+                            class="r1color1"
+                            oninput="r1color1Fu(event)"
+                            placeholder="color1"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">color2</span>
+                        <input
+                            type="text"
+                            class="r1color2"
+                            oninput="r1color2Fu(event)"
+                            placeholder="color2"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">color3</span>
+                        <input
+                            type="text"
+                            class="r1color3"
+                            oninput="r1color3Fu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">bg-color1</span>
+                        <input
+                            type="text"
+                            class="r1bg-color1"
+                            oninput="r1bgColor1Fu(event)"
+                            placeholder="bg color1"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">bg-color2</span>
+                        <input
+                            type="text"
+                            class="r1bg-color2"
+                            oninput="r1bgColor2Fu(event)"
+                            placeholder="bg color2"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">bg-color3</span>
+                        <input
+                            type="text"
+                            class="r1bg-color3"
+                            oninput="r1bgColor3Fu(event)"
+                            placeholder=" not used in here"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">Image</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Image Size</span>
+                        <input
+                            type="text"
+                            class="r1img-size"
+                            oninput="r1userImgSizeFu(event)"
+                            placeholder="img size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r1img-padding"
+                            oninput="r1imgPaddingFu(event)"
+                            placeholder="img padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r1img-margin"
+                            oninput="r1imgMarginFu(event)"
+                            placeholder="img margin"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">Heading1</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r1heading1-fz"
+                            oninput="r1heading1FzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r1heading1-padding"
+                            oninput="r1heading1PaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r1heading1-margin"
+                            oninput="r1heading1MarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+
+                <button class="accordion">Heading2</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r1heading2-fz"
+                            oninput="r1heading2FzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r1heading2-padding"
+                            oninput="r1heading2PaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r1heading2-margin"
+                            oninput="r1heading2MarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+
+                <button class="accordion">Heading3</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r1heading3-fz"
+                            oninput="r1heading3FzFu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r1heading3-padding"
+                            oninput="r1heading3PaddingFu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r1heading3-margin"
+                            oninput="r1heading3MarginFu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">Paragraph</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r1para-fz"
+                            oninput="r1paraFzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r1para-padding"
+                            oninput="r1paraPaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r1para-margin"
+                            oninput="r1paraMarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">links/items</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r1item-fz"
+                            oninput="r1itemFzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r1item-padding"
+                            oninput="r1itemPaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r1item-margin"
+                            oninput="r1itemMarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="r1-header">
+                <div class="r1-img-div">
+                    <img src="r1pic2.jpg" alt="img" class="r1-user-img" />
+                </div>
+                <div class="r1-user-name">
+                    <h1 class="r1-heading1">
+                        MIA<span class="r1-name-space">PARKER</span>
+                    </h1>
+                    <h2 class="r1-heading2 r1-title">PROFESSIONAL TITLE</h2>
+                </div>
+            </div>
+            <hr class="r1-hero-line" />
+            <div class="r1-hero-div">
+                <div class="r1-left-side">
+                    <div class="r1-contact-div">
+                        <h2 class="r1-heading2">CONTACT</h2>
+                        <ul class="r1-contact-list">
+                            <li class="r1-contact-items">
+                                <a class="r1item" href="#">www.facebook.com</a>
+                            </li>
+                            <li class="r1-contact-items">
+                                <a class="r1item" href="#">www.tweitter.com</a>
+                            </li>
+                            <li class="r1-contact-items">
+                                <a class="r1item" href="#">www.instagram.com</a>
+                            </li>
+                            <li class="r1-contact-items">
+                                <a class="r1item" href="#">www.linkdln.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="r1-side-hr" />
+                    <div class="r1-education-div">
+                        <h2 class="r1-heading2">Education</h2>
+                        <ul class="r1-education-list">
+                            <li class="r1-education-items">
+                                <span class="r1-uni-name item"
+                                    >Wisdom School & College</span
+                                >
+                                <span class="r1-date item">2018 to 2020</span>
+                            </li>
+                            <li class="r1-education-items">
+                                <span class="r1-uni-name item"
+                                    >Iqra School</span
+                                >
+                                <span class="r1-date item">2020 to 2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="r1-side-hr" />
+                    <div class="r1-skill-div">
+                        <h2 class="r1-heading2 r1-skill-heading">Skills</h2>
+                        <ul class="r1-skill-list">
+                            <li class="r1-skill-items item">HTML</li>
+                            <li class="r1-skill-items item">CSS</li>
+                            <li class="r1-skill-items item">JAVASCPIT</li>
+                            <li class="r1-skill-items item">PYTHON</li>
+                            <li class="r1-skill-items item">C++</li>
+                            <li class="r1-skill-items item">c</li>
+                            <li class="r1-skill-items item">REACT.JS</li>
+                            <li class="r1-skill-items item">SQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="r1-main-side">
+                    <div class="r1-summary-div">
+                        <div class="r1-circle"></div>
+                        <h2 class="r1-heading2 r1-heading">About Me</h2>
+                        <p class="r1-para">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Ea earum voluptatibus, nulla, hic repellat,
+                            ratione officia recusandae cum ipsum sed nemo amet
+                            laborum! Culpa a modi odit dolorum commodi magni.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Et officiis nihil minima quod? Nemo, vero?
+                            Modi veritatis velit itaque, numquam repudiandae,
+                            quo illo consectetur tempore qui earum quaerat
+                            accusantium asperiores?
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="r1-experience-div">
+                        <div class="r1-circle"></div>
+                        <h2 class="r1-heading2 r1-heading">Work Experience</h2>
+                        <ul class="r1-experience-list">
+                            <li class="r1-experience-item">
+                                <span class="r1-company-name item">Upwork</span>
+                                <span class="r1-date r1-experience-date item">
+                                    2020-2022</span
+                                >
+                            </li>
+                            <li class="r1-experience-item">
+                                <span class="r1-company-name item"
+                                    >Freelance</span
+                                >
+                                <span class="r1-date r1-experience-date item">
+                                    2020-2022</span
+                                >
+                            </li>
+                            <li class="r1-experience-item">
+                                <span class="r1-company-name item"
+                                    >Microsoft</span
+                                >
+                                <span class="r1-date r1-experience-date item"
+                                    >2020--Currently working</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="r1-projects-div">
+                        <div class="r1-circle"></div>
+                        <h2 class="r1-heading r1-heading2">Projects</h2>
+                        <ul class="r1-projects-list">
+                            <li class="r1-projects-item item">My Portfolio</li>
+                            <li class="r1-projects-item item">
+                                A Secure Algorithm For Your Data
+                            </li>
+                            <li class="r1-projects-item item">
+                                Fully Responsive App
+                            </li>
+                            <li class="r1-projects-item item">
+                                Store Everything
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="r1-certification-div">
+                        <div class="r1-circle"></div>
+                        <h2 class="r1-heading r1-heading2">Certification</h2>
+                        <ul class="r1-certification-list">
+                            <li class="r1-certification-item item">
+                                Certification
+                            </li>
+                            <li class="r1-certification-item item">
+                                Certification
+                            </li>
+                            <li class="r1-certification-item item">
+                                Certification
+                            </li>
+                            <li class="r1-certification-item item">
+                                Certification
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ RESUME2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+        <button class="r2download-btn">Download pdf</button>
+        <div class="resume2">
+            <div class="editor-div2">
+                <button class="accordion">Colors</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">color1</span>
+                        <input
+                            type="text"
+                            class="r2color1"
+                            oninput="r2color1Fu(event)"
+                            placeholder="color1"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">color2</span>
+                        <input
+                            type="text"
+                            class="r2color2"
+                            oninput="r2color2Fu(event)"
+                            placeholder="color2"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">color3</span>
+                        <input
+                            type="text"
+                            class="r2color3"
+                            oninput="r2color3Fu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">bg-color1</span>
+                        <input
+                            type="text"
+                            class="r2bg-color1"
+                            oninput="r2bgColor1Fu(event)"
+                            placeholder="bg color1"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">bg-color2</span>
+                        <input
+                            type="text"
+                            class="r2bg-color2"
+                            oninput="r2bgColor2Fu(event)"
+                            placeholder="bg color2"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">bg-color3</span>
+                        <input
+                            type="text"
+                            class="r2bg-color3"
+                            oninput="r2bgColor3Fu(event)"
+                            placeholder=" not used in here"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">Image</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Image Size</span>
+                        <input
+                            type="text"
+                            class="r2img-size"
+                            oninput="r2userImgSizeFu(event)"
+                            placeholder="img size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r2img-padding"
+                            oninput="r2imgPaddingFu(event)"
+                            placeholder="img padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r2img-margin"
+                            oninput="r2imgMarginFu(event)"
+                            placeholder="img margin"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">Heading1</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r2heading1-fz"
+                            oninput="r2heading1FzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r2heading1-padding"
+                            oninput="r2heading1PaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r2heading1-margin"
+                            oninput="r2heading1MarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+
+                <button class="accordion">Heading2</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r2heading2-fz"
+                            oninput="r2heading2FzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r2heading2-padding"
+                            oninput="r2heading2PaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r2heading2-margin"
+                            oninput="r2heading2MarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+
+                <button class="accordion">Heading3</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r2heading3-fz"
+                            oninput="r2heading3FzFu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r2heading3-padding"
+                            oninput="r2heading3PaddingFu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r2heading3-margin"
+                            oninput="r2heading3MarginFu(event)"
+                            placeholder="not used in here"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">Paragraph</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r2para-fz"
+                            oninput="r2paraFzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r2para-padding"
+                            oninput="r2paraPaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r2para-margin"
+                            oninput="r2paraMarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+                <button class="accordion">links/items</button>
+                <div class="panel">
+                    <div class="editing-row">
+                        <span class="editor-property">Font Size</span>
+                        <input
+                            type="text"
+                            class="r2item-fz"
+                            oninput="r2itemFzFu(event)"
+                            placeholder="Font size"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">padding</span>
+                        <input
+                            type="text"
+                            class="r2item-padding"
+                            oninput="r2itemPaddingFu(event)"
+                            placeholder="padding"
+                        />
+                    </div>
+                    <div class="editing-row">
+                        <span class="editor-property">Margin</span>
+                        <input
+                            type="text"
+                            class="r2item-margin"
+                            oninput="r2itemMarginFu(event)"
+                            placeholder="Margin"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="r2-header">
+                <div class="r2-header-divs">
+                    <div class="r2-img-div">
+                        <img src="r1pic2.jpg" alt="img" class="r2-user-img" />
+                    </div>
+                    <div class="r2-user-div">
+                        <h1 class="r2-heading1">Muhammad Owais</h1>
+                        <h2 class="r2-heading2">Frontend Developer</h2>
+                        <div class="r2-location">Tank city,kpk,Pakistan</div>
+                    </div>
+                    <div class="r2-contact-div">
+                        <ul class="r2-contact-list">
+                            <li class="r2-contact-item">
+                                <a href="" class="r2-contact-link r2-item"
+                                    >www.owaistag@gmail.com</a
+                                >
+                            </li>
+                            <li class="r2-contact-item">
+                                <a href="" class="r2-contact-link r2-item"
+                                    >www.owaistag@gmail.com</a
+                                >
+                            </li>
+                            <li class="r2-contact-item">
+                                <a href="" class="r2-contact-link r2-item"
+                                    >github/programmerowais</a
+                                >
+                            </li>
+                            <li class="r2-contact-item">
+                                <a href="" class="r2-contact-link r2-item"
+                                    >twitter/muhammadOwais919209</a
+                                >
+                            </li>
+                            <li class="r2-contact-item">
+                                <a href="" class="r2-contact-link r2-item"
+                                    >Linkdn/MuhammadOwais</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="r2-main">
+                <div class="r2-secs">
+                    <h2 class="r2-heading2 r2-heading12">
+                        About Me <span class="r2-circle"></span>
+                    </h2>
+                    <p class="r2-para">
+                        Hi I'm front-end developer, seeking to &ork in g
+                        collgborgtive environment. I enjoy providing quglity
+                        solutions for the &eb by using &eb technologies. I love
+                        to build modern & gesthetic &ebsites of the most
+                        cregtive XD Designs. My hobbies: Regding, helping &
+                        coding. gm reglly looking for&grd for this role
+                    </p>
+                </div>
+                <div class="r2-secs">
+                    <h2 class="r2-heading2 r2-heading12">
+                        Experience
+                        <span class="r2-circle"></span>
+                    </h2>
+                    <p class="r2-para">
+                        hgve &orked on Xp&ork gs g freelgnce front-end developer
+                        for gbout g yegr & helped g lot of clients of cregting g
+                        modern begutiful looking &ebsites & helping them &ith
+                        coding mostly relgted to jgvgscript. During those dgys,
+                        I legrned & ggined g lot of experience in skills like
+                        ho& to negotigte & understgnd the needs of clients &ith
+                        hgving point-to-point effective communicgtions.
+                    </p>
+                </div>
+                <div class="r2-secs">
+                    <h2 class="r2-heading2 r2-heading12">
+                        Skills
+                        <span class="r2-circle"></span>
+                    </h2>
+                    <ul class="r2-skills-list">
+                        <li class="r2-skills-item r2-para r2-item">HTML</li>
+                        <li class="r2-skills-item r2-para r2-item">CSS</li>
+                        <li class="r2-skills-item r2-para r2-item">
+                            JAVASCRIPT
+                        </li>
+                        <li class="r2-skills-item r2-para r2-item">FIREBASE</li>
+                        <li class="r2-skills-item r2-para r2-item">REACT.JS</li>
+                        <li class="r2-skills-item r2-para r2-item">
+                            BOOTSTRAP
+                        </li>
+                        <li class="r2-skills-item r2-para r2-item">
+                            JQUERY.JS
+                        </li>
+                        <li class="r2-skills-item r2-para r2-item">API</li>
+                        <li class="r2-skills-item r2-para r2-item">SASS</li>
+                        <li class="r2-skills-item r2-para r2-item">GSAP.JS</li>
+                        <li class="r2-skills-item r2-para r2-item">GIT</li>
+                        <li class="r2-skills-item r2-para r2-item">PYTHON</li>
+                    </ul>
+                </div>
+                <div class="r2-secs">
+                    <h2 class="r2-heading2 r2-heading12">
+                        Education
+                        <span class="r2-circle"></span>
+                    </h2>
+                    <ul class="r2-education-list">
+                        <li class="r2-education-item r2-para r2-item">
+                            Matriculation in Computer Science
+                        </li>
+                        <li class="r2-education-item r2-para r2-item">
+                            Intermediate in Computer Science
+                        </li>
+                        <li class="r2-education-item r2-para r2-item">
+                            BS(21-25) in Computer Sceince
+                        </li>
+                    </ul>
+                </div>
+                <div class="r2-secs">
+                    <h2 class="r2-heading2 r2-heading12">
+                        Projects
+                        <span class="r2-circle"></span>
+                    </h2>
+                    <ul class="r2-project-list">
+                        <li class="r2-project-item r2-para r2-item r2-item">
+                            Matriculation in Computer Science
+                        </li>
+                        <li class="r2-project-item r2-para r2-item r2-item">
+                            Intermediate in Computer Science
+                        </li>
+                        <li class="r2-project-item r2-para r2-item r2-item">
+                            BS(21-25) in Computer Sceince
+                        </li>
+                    </ul>
+                </div>
+                <div class="r2-secs">
+                    <h2 class="r2-heading2 r2-heading12">
+                        Certification
+                        <span class="r2-circle"></span>
+                    </h2>
+                    <ul class="r2-certification-list">
+                        <li class="r2-certification-item r2-para r2-item">
+                            Matriculation in Computer Science
+                        </li>
+                        <li class="r2-certification-item r2-para r2-item">
+                            Intermediate in Computer Science
+                        </li>
+                        <li class="r2-certification-item r2-para r2-item">
+                            BS(21-25) in Computer Sceince
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="resume.js"></script>
+    </body>
+</html>

@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --slideSize: 780px;
+    --mainColor1: black;
+    --mainColor2: green;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    display: flex;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: green;
+}
+.container1 {
+    width: 800px;
+    height: max-content;
+    margin: 2rem auto;
+    margin-top: 1rem;
+    overflow: hidden;
+    /* border:2px solid blue; */
+}
+
+/********************* Slide Navigation line ***************/
+.link-line {
+    position: relative;
+    left: 1%;
+    width: 98%;
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.circles {
+    display: flex;
+    justify-content: space-between;
+}
+.line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 95%;
+    left: 3%;
+    height: 8px;
+    background-color: green;
+}
+
+.circles-btn {
+    z-index: 1;
+    background-color: white;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 0.322);
+    transition: all 400ms;
+}
+.circles-btn:first-of-type {
+    color: white;
+    background-color: var(--mainColor2);
+}
+
+/***************** 1st Slide ****************/
+.data-div {
+    position: relative;
+    width: max-content;
+    /* border:1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 400ms;
+}
+
+.data {
+    /* border:1px solid red; */
+    width: var(--slideSize);
+    height: 420px;
+    overflow-y: auto;
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.322);
+    border-radius: 10px;
+    margin-right: 100px;
+    position: relative;
+    left: 10px;
+    padding-bottom: 1rem;
+    /* border:1px solid blue; */
+}
+.form-div {
+    /* border:1px solid red; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+}
+label {
+    font-size: 1.7rem;
+    padding-left: 5px;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+.file {
+    opacity: 0.5;
+    padding-left: 0;
+    font-size: 1.5rem;
+}
+.myfile {
+    margin-left: 1rem;
+    width: max-content;
+}
+.input1 {
+    font-family: serif;
+    width: 100%;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--mainColor1);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.226); */
+}
+.input1:focus {
+    border: 1px solid var(--mainColor2);
+}
+/***************** Summary slide ****************/
+.form-div2 {
+    margin: 2rem auto;
+}
+.slide2-lable {
+    opacity: 0.8;
+    font-weight: 550;
+}
+.slide2-input {
+    font-family: serif;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--mainColor2);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+/* Education Slide *****************************/
+.form-div3 {
+    margin: 2rem auto;
+}
+.company {
+    width: 70%;
+    position: relative;
+    /* border:1px solid red; */
+}
+.company-line {
+    margin: 1rem auto;
+    background-color: black;
+    opacity: 0.6;
+    height: 3px;
+}
+/* .del-company {
+    position: absolute;
+    right: -20px;
+    border-radius: 5px;
+    border:0.5px solid black;
+    z-index: 2;
+    font-size: 0.8rem;
+    padding: 0px 4px;
+    cursor: pointer;
+} */
+/* .del-company:hover {
+    
+    box-shadow: 0.5px 0.5px 5px rgba(0, 128, 0, 0.473);
+
+} */
+/* .del-company:active {
+    border:0.5px solid var(--mainColor2)
+} */
+.slide-heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.working-lable {
+    font-size: 0.8rem;
+    opacity: 1;
+    display: inline-block;
+}
+.input3,
+.company-info {
+    font-family: serif;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--mainColor2);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+/* .company-info {
+    height: 100px;
+} */
+.add-btn {
+    font-size: 1.2rem;
+    color: var(--mainColor2);
+    padding: 0px 2px;
+    margin-bottom: 1rem;
+    outline: none;
+    cursor: pointer;
+    width: max-content;
+}
+.company-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.company-numbering {
+    margin-bottom: 1rem;
+}
+
+.date-lable {
+    font-size: 0.8rem;
+    margin: 0;
+    opacity: 0.9;
+    padding: 0;
+}
+.date-div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 0.5rem;
+}
+.working-div {
+    position: relative;
+    top: 20px;
+    display: inline-flex;
+}
+/*************************** Skills slide *********/
+.form-div4 {
+}
+.slide4-heading {
+    margin-bottom: 0.3rem;
+}
+.slide-para {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin: 0;
+    margin-bottom: 0.3rem;
+    padding: 0;
+}
+
+.slide4-para-toggle,
+.slide6-para-toggle,
+.slide7-para-toggle,
+.slide3-para-toggle {
+    opacity: 1;
+    color: red;
+    font-weight: bold;
+}
+.skills-input-div {
+    margin: 2rem 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-input {
+    width: 85%;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    transition: all 300ms;
+}
+.skills-input:focus {
+    outline-color: var(--mainColor2);
+}
+.skills-btn {
+    width: 14%;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 0.2rem;
+}
+.skills-btn:hover {
+    background-color: var(--mainColor2);
+    cursor: pointer;
+    color: white;
+    border: 2px solid rgba(9, 73, 9, 0.588);
+}
+.skills-btn:active {
+    border: 0.3px solid var(--mainColor2);
+}
+.skills-list {
+    /* border:1px solid red; */
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.skills-item {
+    border-radius: 3px;
+    position: relative;
+    padding: 0.2rem 1rem;
+    padding-left: 0.5rem;
+    margin: 0.6rem;
+    /* margin-right: 2rem; */
+
+    /* border:1px solid var(--mainColor2); */
+    background-color: rgba(128, 128, 128, 0.507);
+}
+.del-skill {
+    position: absolute;
+    top: -2px;
+    cursor: pointer;
+    right: 2px;
+    font-size: 0.8rem;
+}
+
+/*************************** Education,certification,projects & contacts  Slides **************/
+.form-div5,
+.form-div6,
+.form-div7,
+.form-div8 {
+    /* border:1px solid red; */
+    width: 75%;
+    margin: 2rem;
+}
+
+.add-education,
+.add-project,
+.add-certification {
+    width: max-content;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.input-education,
+.input-project,
+.input-certification {
+    border-color: black;
+    font-size: 1.4rem;
+}
+.input-education:focus,
+.input-project:focus,
+.input-certification:focus {
+    border: 2px solid var(--mainColor2);
+}
+.education-list,
+.project-list,
+.certification-list,
+.contact-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.education-item,
+.project-item,
+.certification-item,
+.contact-item {
+    position: relative;
+    width: 100%;
+}
+.del-education,
+.del-project,
+.del-certification,
+.del-company {
+    position: absolute;
+    top: -15px;
+    cursor: pointer;
+    right: -5px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+.data8 {
+    position: relative;
+}
+.save-btn,
+.skip-btn {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+    transition: all 200ms;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 5rem;
+    color: rgba(0, 0, 0, 0.805);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 0.2rem;
+    font-weight: 100;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.skip-btn {
+    right: 1rem;
+}
+.slide8-save-data,
+.slide1-save-data,
+.slide2-save-data {
+    right: 1rem;
+}
+.save-btn:hover,
+.skip-btn:hover {
+    color: white;
+    border: 1.5px solid rgba(10, 10, 10, 0.425);
+    opacity: 0.9;
+    background-color: var(--mainColor2);
+}
+.save-btn:active,
+.skip-btn:active {
+    border-bottom: 0.5px;
+}
+.input-contacts {
+    font-size: 1.7rem;
+}
+/*************** Next/Prev slides button **********************/
+.directionsBtn {
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+.directionsBtn button {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    margin: 0.6rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+    transition: all 200ms;
+}
+.directionsBtn button:hover,
+.directionsBtn button:active {
+    background-color: var(--mainColor2);
+    color: white;
+}
+
+/*##################$$$$$$$$$$$$$$$$$$$$$$$$$ Phase One responsivness #######################$$$$$$$$$$$$$$$$$$$*/
+@media (max-width: 902px) {
+    :root {
+        --slideSize: 500px;
+    }
+    .link-line {
+        margin-bottom: 2rem;
+    }
+    .container1 {
+        /* border:1px solid red; */
+        width: 550px;
+    }
+    .data-div {
+    }
+    .data {
+        /* border:2px solid blue; */
+        width: var(--slideSize);
+        left: 25px;
+        /* margin-right: 380px; */
+    }
+    .form-div4 {
+    }
+    .skills-input-div {
+        width: 90%;
+    }
+    .skills-input,
+    .skills-btn {
+        font-size: 1.5rem;
+    }
+    .skills-list {
+        width: 90%;
+    }
+    .skills-item {
+        margin: 0.5rem;
+        padding: 0.1rem 1rem;
+        padding-left: 0.3rem;
+    }
+    .form-div5,
+    .form-div6,
+    .form-div7,
+    .form-div8 {
+        /* border:1px solid red; */
+        width: 85%;
+        margin: 1rem;
+    }
+    .company {
+        width: 90%;
+    }
+    .input-education,
+    .input-project,
+    .input-certification {
+        font-size: 1.3rem;
+    }
+    .input-contacts {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 560px) {
+    :root {
+        --slideSize: 400px;
+    }
+
+    .line {
+        height: 5px;
+    }
+    .circles-btn {
+        padding: 0.3rem 0.6rem;
+    }
+    .container1 {
+        /* border:1px solid red; */
+        width: 450px;
+        height: max-content;
+    }
+    .circles-btn {
+        font-size: 1rem;
+    }
+    .data {
+        /* border:1px solid red; */
+        height: max-content;
+        /* margin-right: 40px; */
+        /* width: 300px; */
+    }
+    label {
+        font-size: 1rem;
+        padding-left: 2px;
+        margin-bottom: 0.3rem;
+    }
+    .input1 {
+        font-size: 1.7rem;
+    }
+    .slide2-input {
+        font-size: 1rem;
+    }
+    .company {
+        width: 100%;
+    }
+    .input-education,
+    .input-project,
+    .input-certification {
+        font-size: 1.1rem;
+    }
+    .input3 {
+        font-size: 1rem;
+    }
+    .date,
+    .date-lable,
+    .working-lable {
+        font-size: 0.7rem;
+    }
+    .date-div {
+        margin-right: 0.2rem;
+    }
+    .working-div {
+        top: 17px;
+    }
+    .input-contacts {
+        font-size: 1.5rem;
+    }
+    .skills-input-div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .skills-input,
+    .skills-btn {
+        font-size: 1.1rem;
+    }
+    .skills-item {
+        font-size: 0.9rem;
+        margin: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .form-div8 {
+        padding-bottom: 2rem;
+    }
+    .slide-heading {
+        margin-bottom: 0.4rem;
+    }
+    .input-contacts {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .save-data {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    :root {
+        --slideSize: 340px;
+    }
+    .container1 {
+        width: 355px;
+    }
+    .data {
+        left: 12px;
+    }
+    .date,
+    .date-lable,
+    .working-lable {
+        font-size: 0.6rem;
+    }
+    .date-div {
+        margin-right: 2px;
+    }
+}
