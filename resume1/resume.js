@@ -45,7 +45,7 @@ r1download.addEventListener("click", () => {
     r1download.style.display = "none";
     setTimeout(() => {
         let urlData =
-            "http://api.pdflayer.com/api/convert?access_key=ad2799407ee5fcad5ee3bb4e23a73969&document_url=https://programmerowais.github.io/OwaisResumeBuilder.github.io/&page_size=A4&delay=3000&creator=MuhammadOwais&author=MuhammadOwais";
+            "http://api.pdflayer.com/api/convert?access_key=ad2799407ee5fcad5ee3bb4e23a73969&document_url=https://programmerowais.github.io/blogr-page.github.io/&page_size=A4&delay=3000&creator=MuhammadOwais&author=MuhammadOwais";
         async function apiData(urlData) {
             let response = await fetch(urlData);
             let data = await response.json();
